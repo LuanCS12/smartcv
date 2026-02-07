@@ -5,3 +5,6 @@ mkdir app tests
 touch README.md requirements.txt .gitignore
 
 type nul > README.md
+
+git init
+
