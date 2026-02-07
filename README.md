@@ -48,3 +48,73 @@ Desenvolver um sistema inteligente capaz de analisar currículos automaticamente
 
 ## Arquitetura do Sistema
 
+Usuário
+↓
+Interface Web
+↓
+API FastAPI
+↓
+Extração de Texto (PDF)
+↓
+NLP / IA
+↓
+Score + Explicação
+↓
+Banco de Dados
+↓
+Ranking de Candidatos
+
+
+---
+
+## Estrutura do Projeto
+
+smartcv/
+├── app/
+│ ├── main.py
+│ ├── api/
+│ ├── core/
+│ ├── models/
+│ ├── schemas/
+│ ├── services/
+│ ├── db/
+│ ├── templates/
+│ ├── static/
+│ └── utils/
+│
+├── tests/
+├── requirements.txt
+├── README.md
+└── .env
+
+
+---
+
+## ⚙️ Funcionalidades
+
+- Upload de currículos em PDF  
+-  Extração automática de habilidades  
+-  Cálculo de score de compatibilidade  
+-  Ranking automático de candidatos  
+-  Explicação detalhada da pontuação  
+-  Interface web simples e intuitiva  
+
+---
+
+## Como Executar o Projeto
+
+### 1° Clonar o repositório
+```bash
+git clone https://github.com/seu-usuario/smartcv.git
+cd smartcv
+
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+http://127.0.0.1:8000
+
+
