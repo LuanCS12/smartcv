@@ -46,5 +46,5 @@ Desenvolver um sistema inteligente capaz de analisar currículos automaticamente
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
